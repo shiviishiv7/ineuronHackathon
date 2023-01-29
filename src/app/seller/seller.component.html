@@ -1,0 +1,16 @@
+<p>seller works!</p>
+
+
+
+<div>
+
+<div *ngFor="let item of orderlist">
+
+    {{item.productId}}
+    {{item.quantity}}
+    {{item.status}}
+    {{item.addressId}}
+    <button (click)="getDetails(item)">Get Details</button>
+
+</div>
+</div>

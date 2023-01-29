@@ -1,0 +1,21 @@
+<p>address works!</p>
+
+
+
+<div *ngIf="addressList.length==0">
+    <button (click)="createAddress()">Create address</button>
+</div>
+
+
+
+<div *ngIf="addressList.length>0">
+
+    <div *ngFor="let item of addressList">
+        {{item.townorcity}}
+        {{item.streetAddress}}
+        {{item.postcodezip}}
+        {{item.state}}
+        <button (click)="selectedAddress(item)"> </button>
+    </div>
+
+</div>

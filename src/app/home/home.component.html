@@ -1,0 +1,17 @@
+
+
+
+<input [(ngModel)]="value">
+<input [(ngModel)]="min">
+<input [(ngModel)]="max">
+<button (click)="submit()">Submit</button>
+
+
+<div>
+    <div *ngFor="let item of productlist" >
+        {{item.name}}
+        {{item.description}}
+        {{item.price}}
+        <button (click)="placeOrder(item)">Place Order</button>
+    </div>
+</div>
